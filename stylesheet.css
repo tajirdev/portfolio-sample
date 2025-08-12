@@ -1,0 +1,132 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== GLOBAL CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ===== HERO ===== */
+.hero {
+    background-color: #333;
+    background: url('https://picsum.photos/1200/400') no-repeat center center/cover;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero span {
+    color: yellow;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-card {
+    background: aqua;
+    padding: 20px;
+    flex: 1 1 150px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* ===== PROJECTS ===== */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    background: gray;
+    padding: 20px;
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+p{
+    text-align: center;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .projects-grid,
+    .skills-grid {
+        flex-direction: column;
+    }
+}
